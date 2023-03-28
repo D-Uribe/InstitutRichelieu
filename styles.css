@@ -1,0 +1,118 @@
+.nav-link{
+    position: relative;
+}
+.navbar{
+    height: 100%;
+    position: sticky;
+}
+.navbar-brand{
+    margin-left: 17px;
+}
+.palabrasnav{
+    margin-right: 6vw;
+}
+
+.nav-link::after{
+    content: '';
+    opacity: 0;
+    transition: all 0.2s;
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.nav-link:hover::after{
+    opacity: 1;
+}
+ .c-item{
+    height: 70vh;
+    width: 20%;
+ }
+ .c-img{
+    height: 100%;
+    width: 500%;
+    object-fit: cover;
+ }
+.txt1{
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+.navbar .navbar-collapse {
+    text-align: center;
+ }
+ .separador{
+    background-image: url(images/switzerland1.jpg);
+    height: 60vh;
+    width: 100vw;
+}
+ @media (max-width: 991px){
+    .navbar .navbar-collapse {
+        background-color: #edc967;
+      }
+      .nav-link::after{
+        content: '';
+        opacity: 0;
+        transition: all 0.2s;
+        height: 2px;
+        width: 170px;
+        background-color: black;
+        position: absolute;
+        bottom: 0;
+        left: 40%;
+    }
+    .navbar-brand img{
+        margin-left: 5px;
+        margin-right: 50px;
+    }
+    
+ }
+ 
+ .intro{
+    text-align: center;
+    font-size: 70px;
+    /*font-family: 'Italiana', serif;*/
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
+
+
+/*TESTIMONIOS*/
+.card{
+    border:none;
+}
+
+.user-content p{
+    margin-top:5px;
+    font-size:12px;
+}
+
+
+.ratings i{
+    color:#edc957;
+}
+/*TERMINA TESTIMONIOS*/
+ 
+.botoncen{
+    margin-left: 45%;
+}
+.bodyins{
+    background-image: url(images/montana.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.grad{
+    background: rgb(2,27,109);
+    background: linear-gradient(105deg, rgba(2,27,109,1) 0%, rgba(3,24,94,1) 32%, rgba(255,255,255,1) 32%, rgba(255,245,247,1) 68%, rgba(81,17,22,1) 68%, rgba(229,37,53,1) 68%, rgba(174,17,32,1) 100%);
+}
+.gradindex{
+    background: rgb(237,201,103);
+    background: linear-gradient(105deg, rgba(237,201,103,1) 1%, rgba(237,201,103,1) 15%, rgba(241,213,138,1) 28%, rgba(245,225,171,1) 46%, rgba(255,255,255,1) 63%, rgba(255,255,255,1) 91%);
+}
+
+.footercolor{
+    background-color: #000;
+}
+
