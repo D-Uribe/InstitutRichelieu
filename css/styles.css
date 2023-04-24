@@ -98,8 +98,9 @@
 .botoncen{
     margin-left: 45%;
 }
+/*CHECAR PORQUE NO HAY IMAGEN EN INSCRIPCIONES, QUIZA POR RUTA STATUS: DONE!!!*/
 .bodyins{
-    background-image: url(images/montana.jpg);
+    background-image: url(../images/montana.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -114,5 +115,14 @@
 
 .footercolor{
     background-color: #000;
+}
+/*GALERIA*/
+
+.gallery img{
+    transition: 1s;
+    padding:15px;
+}
+.gallery img:hover{
+    transform: scale(1.1);
 }
 
