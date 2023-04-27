@@ -53,40 +53,40 @@
         </header>
       </div>
       <section class="container my-2 bg-dark w-50 py-3 text-light p-2">
-        <form class="row g-3">
+        <form action="conexion.php" method="post" class="row g-3">
             <div class="col-md-6">
-                <label for="validationCustom01" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="validationCustom01" required>
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" required>
                 <div class="valid-feedback">
                   Looks good!
                 </div>
               </div>
               <div class="col-md-6">
-                <label for="validationCustom02" class="form-label">Apellido</label>
-                <input type="text" class="form-control" id="validationCustom02"  required>
+                <label for="apellido" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="apellido" name="apellido"  required>
                 <div class="valid-feedback">
                   Looks good!
                 </div>
               </div>
               <div class="col-md-6">
-                <label for="inputPassword4" class="form-label">Número de celular</label>
-                <input type="password" class="form-control" id="inputPassword4">
+                <label for="celular" class="form-label">Número de celular</label>
+                <input type="password" class="form-control" id="celular" name="celular">
               </div>
             <div class="col-md-6">
-              <label for="inputEmail4" class="form-label">Email</label>
-              <input type="email" class="form-control" id="inputEmail4">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" name="email" required>
             </div>
             <div class="col-6">
-              <label for="inputAddress" class="form-label">Dirección de calle</label>
-              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+              <label for="direccion" class="form-label">Dirección de calle</label>
+              <input type="text" class="form-control" id="direccion" placeholder="1234 Main St" name="direccion">
             </div>
             <div class="col-6">
-              <label for="inputAddress2" class="form-label">Número de domicilio</label>
-              <input type="text" class="form-control" id="inputAddress2" placeholder="Departamento, estudio, o piso">
+              <label for="numdomicilio" class="form-label">Número de domicilio</label>
+              <input type="text" class="form-control" id="numdomicilio" placeholder="Departamento, estudio, o piso" name="numdomicilio">
             </div>
             <div class="col-md-4">
-                <label for="inputState" class="form-label">País de residencia</label>
-                <select id="inputState" class="form-select">
+                <label for="pais" class="form-label">País de residencia</label>
+                <select id="pais" name="pais" class="form-select">
                   <option selected>Suiza</option>
                   <option value="AF">Afganistán</option>
                   <option value="AL">Albania</option>
@@ -325,16 +325,19 @@
                 </select>
               </div>
             <div class="col-md-4">
-              <label for="inputCity" class="form-label">Ciudad</label>
-              <input type="text" class="form-control" id="inputCity">
+              <label for="ciudad" class="form-label">Ciudad</label>
+              <input type="text" class="form-control" id="ciudad" name="ciudad">
             </div>
             <div class="col-md-4">
-              <label for="inputZip" class="form-label">Código postal</label>
-              <input type="text" class="form-control" id="inputZip">
+              <label for="zip" class="form-label">Código postal</label>
+              <input type="text" class="form-control" id="zip" name="zip">
             </div>
             <div class="col-12">
-              <button type="submit" class="btn btn-primary botoncen">Enviar</button>
+              <!--<a href="inscripciones-esp.html">-->
+              <button type="submit" name="submit" class="btn btn-primary botoncen">Enviar</button>
+            <!--</a>-->
             </div>
+            <div><input type="hidden" name="returnUrl" value="inscripciones-esp.html"></div>
           </form>
       </section>
 
