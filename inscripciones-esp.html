@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </head>
 <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
@@ -48,7 +49,7 @@
       </div>
     </div>
   </nav>
-    <body style="background-image: url(images/arboles1.jpg);">
+    <body style="background-image: url(images/estudiante.jpg);">
       <div class="container-fluid py-3">
         <header class="text-center">
             <h1 class="display-1 mb-4 txt1">Inscripciones</h1>
@@ -351,14 +352,12 @@
             </div>
             <div><input type="hidden" name="returnUrl" value="inscripciones-esp.html"></div>
           </form>
-          <button id="botona">ALERTA</button>
-          <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
           <script>
             $('#submit').click(function() {
           if ($("#myform")[0].checkValidity()) {
             Swal.fire({
-              title: 'Good job!',
-              text: 'You clicked the button!',
+              title: 'Excelente!',
+              text: 'Tu respuesta ha sido enviada con éxito!',
               icon: 'success',
               confirmButtonText: 'OK'
             }).then((result) => {
