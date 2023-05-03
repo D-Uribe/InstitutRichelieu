@@ -99,8 +99,12 @@
     margin-left: 45%;
 }
 /*CHECAR PORQUE NO HAY IMAGEN EN INSCRIPCIONES, QUIZA POR RUTA STATUS: DONE!!!*/
+.bodyinscrip{
+    
+}
+
 .bodyins{
-    background-image: url(../images/montana.jpg);
+    background-image: url(images/arboles1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }

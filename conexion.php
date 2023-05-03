@@ -34,7 +34,9 @@ if (!$conexion) {
     exit;
   }*/
   $returnUrl = isset($_POST['returnUrl']) ? $_POST['returnUrl'] : 'index-esp.html';
+  sleep(10);
   header("Location: $returnUrl");
+  
 
   mysqli_close($conexion);
 
