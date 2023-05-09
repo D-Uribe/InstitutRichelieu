@@ -78,7 +78,22 @@
     color: black;
 }
 
+.bordercard{
+    border:none;
+}
 
+.iconocard {
+    margin-bottom: 30px;
+  }
+  
+.textocard{
+    text-align: justify;
+}
+
+.center{
+    text-align: center;
+}
+  
 /*TESTIMONIOS*/
 .card{
     border:none;
@@ -99,9 +114,9 @@
     margin-left: 45%;
 }
 /*CHECAR PORQUE NO HAY IMAGEN EN INSCRIPCIONES, QUIZA POR RUTA STATUS: DONE!!!*/
-.bodyinscrip{
+/*.bodyinscrip{
     
-}
+}*/
 
 .bodyins{
     background-image: url(images/arboles1.jpg);
