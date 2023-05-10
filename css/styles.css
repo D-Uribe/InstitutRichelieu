@@ -44,7 +44,7 @@
     text-align: center;
  }
  .separador{
-    background-image: url(images/switzerland1.jpg);
+    background-image: url(../images/switzerland1.jpg);
     height: 60vh;
     width: 100vw;
 }
@@ -78,16 +78,17 @@
     color: black;
 }
 
-.bordercard{
-    border:none;
+.underline{
+    text-decoration: underline;
 }
 
 .iconocard {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
   
 .textocard{
     text-align: justify;
+    margin: 10px;
 }
 
 .center{
@@ -113,11 +114,18 @@
 .botoncen{
     margin-left: 45%;
 }
-/*CHECAR PORQUE NO HAY IMAGEN EN INSCRIPCIONES, QUIZA POR RUTA STATUS: DONE!!!*/
-/*.bodyinscrip{
-    
-}*/
+/*INSCRIPCIONES*/
 
+.imageninscrip{
+    background-image: url(../images/estudiante.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+.forma {
+    opacity: 0.85;
+  }
 .bodyins{
     background-image: url(images/arboles1.jpg);
     background-repeat: no-repeat;
