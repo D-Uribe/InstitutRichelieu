@@ -24,26 +24,26 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto palabrasnav">
           <li class="nav-item">
-            <a class="nav-link" href="index-fr.html">Découvrez-nous</a>
+            <a class="nav-link" href="index-fr.html"><h4>Découvrez-nous</h4></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="galeria-fr.html">Galerie</a>
+            <a class="nav-link" href="galeria-fr.html"><h4>Galerie</h4></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="inscripciones-fr.html">Inscription</a>
+            <a class="nav-link" href="inscripciones-fr.html"><h4>Inscription</h4></a>
           </li>
         </ul>
         <ul class="navbar-nav ms-auto">
             <div class="navbar-brand">
-                <a style="text-decoration: none;" href="index-esp.html">
-                  <img src="images/spain.png" alt="logo" width="40px" height="40px">
-                </a>
-                <a style="text-decoration: none;" href="index-eng.html">
-                  <img src="images/united-kingdom.png" alt="logo" width="40px" height="40px">
-                </a>
-                <a style="text-decoration: none;" href="index-fr.html">
-                  <img src="images/france.png" alt="logo" width="40px" height="40px">
-                </a>
+              <a style="text-decoration: none;" href="index-esp.html">
+                <img src="images/spain.png" alt="logo" width="50px" height="50px" class="hvr-push">
+              </a>
+              <a style="text-decoration: none;" href="index-eng.html">
+                <img src="images/united-kingdom.png" alt="logo" width="50px" height="50px" class="hvr-push">
+              </a>
+              <a style="text-decoration: none;" href="index-fr.html">
+                <img src="images/france.png" alt="logo" width="50px" height="50px" class="hvr-push">
+              </a>
             </div>
         </ul>
       </div>
@@ -55,7 +55,7 @@
           <h1 class="display-1 mb-4 txt1">Inscription</h1>
       </header>
     </div>
-    <section class="container my-2 bg-dark w-50 py-3 text-light p-2">
+    <section class="container my-2 bg-dark w-50 py-3 text-light p-2 forma">
       <form action="conexion.php" method="post" id="myform"class="row g-3 needs-validation" novalidate>
           <div class="col-md-6">
               <label for="nombre" class="form-label">Prénom</label>
@@ -97,7 +97,7 @@
           </div>
           <div class="col-6">
             <label for="numdomicilio" class="form-label">Numéro d'addresse</label>
-            <input type="text" class="form-control" id="numdomicilio" placeholder="Departamento, estudio, o piso" name="numdomicilio">
+            <input type="text" class="form-control" id="numdomicilio" placeholder="Appartement ou studio" name="numdomicilio">
           </div>
           <div class="col-md-4">
               <label for="pais" class="form-label">Pays de résidence</label>
@@ -358,15 +358,15 @@
                 </select>
               </div>
               <div class="col-md-4">
-                <label for="ciudad" class="form-label">Ciudad</label>
+                <label for="ciudad" class="form-label">Ville</label>
                 <input type="text" class="form-control" id="ciudad" name="ciudad">
               </div>
               <div class="col-md-4">
-                <label for="zip" class="form-label">Código postal</label>
+                <label for="zip" class="form-label">Code postal</label>
                 <input type="text" class="form-control" id="zip" name="zip">
               </div>
               <div class="col-12">
-                <button type="submit" name="submit" id="submit" class="btn btn-primary botoncen">Enviar</button>
+                <button type="submit" name="submit" id="submit" class="btn btn-primary botoncenfr">Soumettre</button>
               </div>
               <div><input type="hidden" name="returnUrl" value="inscripciones-esp.html"></div>
             </form>

@@ -9,7 +9,7 @@
     margin-left: 17px;
 }
 .palabrasnav{
-    margin-right: 6vw;
+    margin-right: 4vw;
 }
 
 .nav-link::after{
@@ -33,7 +33,7 @@
  .c-img{
     height: 100%;
     width: 500%;
-    object-fit: cover;
+    
  }
 .txt1{
     color: white;
@@ -43,32 +43,78 @@
 .navbar .navbar-collapse {
     text-align: center;
  }
- .separador{
-    background-image: url(../images/switzerland1.jpg);
-    height: 60vh;
-    width: 100vw;
-}
- @media (max-width: 991px){
-    .navbar .navbar-collapse {
-        background-color: #edc967;
-      }
-      .nav-link::after{
-        content: '';
-        opacity: 0;
-        transition: all 0.2s;
-        height: 2px;
-        width: 170px;
-        background-color: black;
-        position: absolute;
-        bottom: 0;
-        left: 40%;
-    }
-    .navbar-brand img{
-        margin-left: 5px;
-        margin-right: 50px;
-    }
-    
+ .razones{
+    margin-bottom: -150px;
  }
+ .separador{
+    background-image: url(../images/estudiantesdivis.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden; /* Hide the overflow */
+    clip-path: polygon(48% 22%, 100% 23%, 100% 35%, 99% 100%, 79% 100%, 54% 100%, 20% 100%, 0 100%, 0 35%, 0 23%);
+}
+@-webkit-keyframes hvr-push {
+    50% {
+      -webkit-transform: scale(0.8);
+      transform: scale(0.8);
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+  @keyframes hvr-push {
+    50% {
+      -webkit-transform: scale(0.8);
+      transform: scale(0.8);
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+  .hvr-push {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  }
+  .hvr-push:hover, .hvr-push:focus, .hvr-push:active {
+    -webkit-animation-name: hvr-push;
+    animation-name: hvr-push;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+  }
+  @media (max-width: 991px) {
+    .navbar .navbar-collapse {
+      background-color: #edc967;
+    }
+    .nav-link{
+        margin-left: 5vw;
+    }
+    .nav-link::after {
+      content: '';
+      opacity: 0;
+      transition: all 0.2s;
+      height: 2px;
+      width: 180px;
+      background-color: black;
+      position: absolute;
+      bottom: 0;
+      left: 40%;
+    }
+    .navbar-brand img {
+      margin-left: 1vw;
+    }
+  }
+  
  
  .intro{
     text-align: center;
@@ -78,9 +124,6 @@
     color: black;
 }
 
-.underline{
-    text-decoration: underline;
-}
 
 .iconocard {
     margin-bottom: 10px;
@@ -111,9 +154,7 @@
 }
 /*TERMINA TESTIMONIOS*/
  
-.botoncen{
-    margin-left: 45%;
-}
+
 /*INSCRIPCIONES*/
 
 .imageninscrip{
@@ -143,6 +184,13 @@
 .footercolor{
     background-color: #000;
 }
+
+.botoncen{
+    margin-left: 45%;
+}
+.botoncenfr{
+    margin-left: 42%;
+}
 /*GALERIA*/
 
 .gallery img{
@@ -153,3 +201,6 @@
     transform: scale(1.1);
 }
 
+.titlegalesp{
+    margin-left: 60px;
+}
